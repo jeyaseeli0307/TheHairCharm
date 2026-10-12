@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Seeli account</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body data-page="auth">
+  <div class="announcement">A little treat for your hair · New styles from ₹90 <span>✿</span></div>
+  <header class="site-header simple-header"><a class="brand" href="index.html"><span class="brand-mark">s</span><span>seeli<small>HAIR, WITH A LITTLE EXTRA</small></span></a><a class="text-link" href="index.html">← Back to the shop</a></header>
+  <main class="auth-page">
+    <div class="auth-art"><span class="eyebrow">Your little happy place</span><h1>Good hair days<br>start right here.</h1><p>Save your favourites and keep your cute finds all in one place.</p><img src="pearlclip.jpg" alt="Pearl hair clips on a soft white background"></div>
+    <section class="auth-card" aria-labelledby="auth-title">
+      <span class="eyebrow">Welcome to Seeli</span><h2 id="auth-title">Come on in ♡</h2><p class="auth-subtitle">A tiny account for all your pretty things.</p>
+      <div class="auth-tabs" role="tablist" aria-label="Account access"><button class="auth-tab is-active" type="button" data-auth-mode="login" role="tab" aria-selected="true">Sign in</button><button class="auth-tab" type="button" data-auth-mode="signup" role="tab" aria-selected="false">Create account</button></div>
+      <form id="login-form" class="auth-form" data-auth-form="login">
+        <label for="login-email">Email address</label><input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="login-password">Password</label><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required>
+        <button class="button button-dark button-full" type="submit">Sign in to Seeli <span>→</span></button>
+      </form>
+      <form id="signup-form" class="auth-form hidden" data-auth-form="signup">
+        <label for="signup-name">Your name</label><input id="signup-name" name="name" autocomplete="name" placeholder="What should we call you?" required>
+        <label for="signup-email">Email address</label><input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="signup-password">Create a password</label><input id="signup-password" name="password" type="password" autocomplete="new-password" minlength="6" placeholder="At least 6 characters" required>
+        <button class="button button-dark button-full" type="submit">Create my account <span>→</span></button>
+      </form>
+      <p class="demo-note">Demo account experience: this page saves a local profile on this device. It does not verify your identity or store your password on a server.</p>
+      <div class="auth-shortcuts"><a href="orders.html">My orders</a><a href="wishlist.html">My wishlist</a></div>
+    </section>
+  </main>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
